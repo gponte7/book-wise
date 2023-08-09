@@ -5,8 +5,10 @@ import {
   LoginOption,
   LoginOptionsContainer,
 } from './styles'
-import Logo from '../../assets/logo.png'
-import { GithubLogo, GoogleLogo, RocketLaunch } from 'phosphor-react'
+import Logo from '../../assets/loginLogo.png'
+import GoogleIcon from '../../assets/google.svg'
+import GithubIcon from '../../assets/github.svg'
+import { RocketLaunch } from 'phosphor-react'
 
 export default function Login() {
   return (
@@ -19,11 +21,11 @@ export default function Login() {
 
           <LoginOptionsContainer>
             <LoginOption>
-              <GoogleLogo size={32} />
+              <Image alt="Google logo" src={GoogleIcon} quality={100} />
               <span>Entrar com Google</span>
             </LoginOption>
             <LoginOption>
-              <GithubLogo size={32} />
+              <Image alt="Github logo" src={GithubIcon} quality={100} />
               <span>Entrar com GitHub</span>
             </LoginOption>
             <LoginOption>
